@@ -5,18 +5,13 @@ import Image from "../image";
 import {DEFAULT_PRODUCT_HOME_IMG_URL} from "../constants/urls";
 
 const Product = ( props ) => {
-	const { product,isLoggedIn } = props;
-	const regular = product?.regularPrice/2;
-	const re = product?.regularPrice ;
-	const regula = +re + +regular;
-	const login = product?.regularPrice;
-	const rar = isLoggedIn ? login :  regula  ;  
-const par = Number(rar);
-const  procent =  (product?.regularPrice - product?.price) /  product?.regularPrice * 100;
+	const { product } = props;
+	
+	
 
-const amount = par - product?.price;
-const interest = par/100;
-const result = amount/interest;
+
+
+
 
 
 
