@@ -1,10 +1,7 @@
 import Layout from "../src/components/Layout";
-import ProductHome from "../src/components/ProductHomePage";
-import SarchProps from "../src/components/search";
-import Post from "../src/components/Post";
+
 import client from '../src/components/ApolloClient';
-import ParentCategoriesBlock from "../src/components/category/category-block/ParentCategoriesBlock";
-import ParentProductBlock from "../src/components/products/PerentProducts";
+
 import PRODUCTS_AND_CATEGORIES_QUERY from "../src/queries/product-and-categories";
 import HeroCarousel from "../src/components/home/hero-carousel";
 import Accordion from "../src/components/Accordion";
@@ -31,10 +28,7 @@ import ParentCategoryBlock from "../src/components/category/category-block/Paren
 import ParentTagBlock from "../src/components/category/category-block/ParentTagBlock";
 export default function Home (props) {
 	
-	const { isLoggedIn } = useAuth();
 	
-	
-	<SarchProps isLoggedIn={isLoggedIn}/>
 	const imageUrl = Telegram;
 
 	const handleDownload = () => {

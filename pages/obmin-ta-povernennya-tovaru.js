@@ -1,6 +1,6 @@
 import Layout from "../src/components/Layout";
 import ProductHome from "../src/components/ProductHomePage";
-import SarchProps from "../src/components/search";
+
 import Post from "../src/components/Post";
 import client from '../src/components/ApolloClient';
 import ParentCategoriesBlock from "../src/components/category/category-block/ParentCategoriesBlock";
@@ -31,10 +31,7 @@ import ParentCategoryBlock from "../src/components/category/category-block/Paren
 import ParentTagBlock from "../src/components/category/category-block/ParentTagBlock";
 export default function Home (props) {
 	
-	const { isLoggedIn } = useAuth();
-	
-	
-	<SarchProps isLoggedIn={isLoggedIn}/>
+
 	const imageUrl = Telegram;
 
 	const handleDownload = () => {
