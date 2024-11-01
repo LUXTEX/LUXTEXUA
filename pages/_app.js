@@ -5,7 +5,7 @@ import NProgress from 'nprogress';
 
 import client from "../src/components/ApolloClient";
 import { AppProvider } from "../src/components/context/AppContext";
-import { AuthContextProvider } from '../src/components/login-function/auth-context';
+
 
 NProgress.configure({ showSpinner: false });
 
@@ -15,7 +15,7 @@ Router.events.on('routeChangeError', () => NProgress.done());
 
 function MyApp({ Component, pageProps }) {
   return (
-    <AuthContextProvider>
+    
       <AppProvider>
        
             <ApolloProvider client={client}>
@@ -23,7 +23,7 @@ function MyApp({ Component, pageProps }) {
             </ApolloProvider>
           
       </AppProvider>
-    </AuthContextProvider>
+   
   );
 }
 

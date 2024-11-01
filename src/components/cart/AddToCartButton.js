@@ -3,7 +3,7 @@ import {useQuery, useMutation} from '@apollo/client';
 import Link from "next/link";
 import {v4} from 'uuid';
 import cx from 'classnames';
-import { useAuth } from '../login-function/hooks';
+
 import {AppContext} from "../context/AppContext";
 import {getFormattedCart,getFormattedCartLog} from "../../functions";
 import GET_CART from "../../queries/get-cart";
@@ -11,7 +11,7 @@ import ADD_TO_CART from "../../mutations/add-to-cart";
 
 const AddToCart = (props) => {
 
-	const { isLoggedIn } = useAuth();
+	
 	
 
     const {product} = props;

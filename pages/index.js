@@ -6,7 +6,7 @@ import client from '../src/components/ApolloClient';
 import PRODUCTS_AND_CATEGORIES_QUERY from "../src/queries/product-and-categories";
 import HeroCarousel from "../src/components/home/hero-carousel";
 
-import { useAuth } from '../src/components/login-function/hooks';
+
 import Head from "next/head"
 
 import Telegram from "../public/vb.png"
@@ -19,7 +19,7 @@ import ParentCategoryBlock from "../src/components/category/category-block/Paren
 import ParentTagBlock from "../src/components/category/category-block/ParentTagBlock";
 export default function Home (props) {
 	
-	const { isLoggedIn } = useAuth();
+
 	
 	
 	
@@ -183,7 +183,7 @@ export default function Home (props) {
         <div className="grid grid-cols-2 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-3 xl:grid-cols-3 gap-4">
             {featuredproducts.length ? (
 				
-			featuredproducts.map(product => <ProductHome key={product.id} isLoggedIn={isLoggedIn} product={product}/>)
+			featuredproducts.map(product => <ProductHome key={product.id}  product={product}/>)
             ) : ''}
         </div>
     </div>

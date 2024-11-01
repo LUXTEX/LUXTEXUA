@@ -4,9 +4,9 @@ import CartIconmob from "./cart/CartIconmob";
 import { useState } from 'react';
 import profilePic from '../../public/logo.png'
 import Image from 'next/image'
-import { useAuth } from './login-function/hooks';
+
 const Nav = () => {
-	const { isLoggedIn } = useAuth();
+	
 	const [ isMenuVisible, setMenuVisibility ] = useState(false);
     const [activeIndex, setActiveIndex] = useState(2);
 	

@@ -10,7 +10,7 @@ import { ApolloProvider } from "@apollo/client";
 import Login from "../src/components/login";
 import SignUp from '../src/components/signup/SignUp'
 import { useState } from 'react';
-import { useAuth } from '../src/components/login-function/hooks';
+
 import Head from "next/head"
 import AliceCarousel from 'react-alice-carousel';
 import Navigation from "../src/components/navigation-chantarelle";
