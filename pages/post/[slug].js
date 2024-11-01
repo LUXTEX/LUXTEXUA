@@ -52,12 +52,12 @@ export default function Post(props) {
                     	
                     <div className="lg:w-2/4 mt-6 lg:mt-0 lg:order-first ">		
                         <h4 className="products-main-title text-2xl lg:text-4xl lg:w-11/12 uppercase">{ post?.title }</h4>
-                        <p className="lg:w-4/5  mt-3 lg:text-lg text-gray-500 ">
+                        <div className="lg:w-4/5  mt-3 lg:text-lg text-gray-500 ">
                
-                           <div  dangerouslySetInnerHTML={ {
+                           <p  dangerouslySetInnerHTML={ {
 						   			__html: post.content
-						   } }></div>
-                        </p>
+						   } }></p>
+                        </div>
                     </div>
                     <div className="lg:w-2/4 order-first ">
                         <img

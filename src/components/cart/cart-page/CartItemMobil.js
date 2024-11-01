@@ -1,7 +1,7 @@
 import { useState } from 'react';
 import { v4 } from "uuid";
 import { getUpdatedItems } from "../../../functions";
-import {Cross, Loading} from "../../icons";
+
 
 const CartItem = ( {
 	                   item,
