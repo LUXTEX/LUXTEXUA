@@ -36,24 +36,27 @@ export default function CategorySingle( props ) {
 };
 
 export async function getStaticProps(context) {
+    const { params: { slug } } = context;
+    try {
+        const { data } = await client.query({
+            query: PRODUCT_BY_CATEGORY_SLUG,
+            variables: { slug }
+        });
 
-    const {params: { slug}} = context
-
-    const {data} = await client.query(({
-        query: PRODUCT_BY_CATEGORY_SLUG,
-        variables: { slug }
-    }));
-
-    return {
-        props: {
-            categoryName: data?.productCategory?.name ?? '',
-            products: data?.productCategory?.products?.nodes ?? []
-        },
-        revalidate: 1
+        return {
+            props: {
+                categoryName: data?.productCategory?.name ?? '',
+                products: data?.productCategory?.products?.nodes ?? []
+            },
+            revalidate: 1
+        };
+    } catch (error) {
+        console.error('Error fetching product data:', error);
+        return {
+            notFound: true
+        };
     }
-
 }
-
 export async function getStaticPaths () {
     const { data } = await client.query({
         query: PRODUCT_CATEGORIES_SLUGS
