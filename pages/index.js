@@ -16,7 +16,7 @@ import { Swiper, SwiperSlide } from 'swiper/react';
 
 
 import ParentCategoryBlock from "../src/components/category/category-block/ParentCategoryBlock";
-
+import ParentTagBlock from "../src/components/category/category-block/ParentTagBlock";
 export default function Home (props) {
 	
 
@@ -127,6 +127,14 @@ export default function Home (props) {
       <strong>Постільна білизна</strong> від LUXTEX представлена в різних розмірах, що дає змогу підібрати оптимальний варіант для вашого ліжка: <strong>півтора, двоспальний, євро та сімейний</strong>. Ознайомтесь із таблицею розмірів нижче для зручності вибору відповідних розмірів підковдри, наволочки та простирадла. Детальні розміри доступні на сторінці кожного товару.
     </p>
   </div>
+  {productTags.length ? (
+    productTags
+        .filter(tag => tag.slug !== "navolochky-5070")
+        .filter(tag => tag.slug !== "navolochky-7070")
+        .map(category => (
+            <ParentTagBlock key={category.id || category.slug} category={category} />
+        ))
+) : ''}
 
 
 <h2 className="text-xl lg:text-2xl font-bold mb-10 mt-8">Таблиця розмірів</h2>

@@ -17,7 +17,7 @@ module.exports = {
     remotePatterns: [
       {
         protocol: 'https',         // Протокол (https или http)
-        hostname: 'next.luxtex-shop.com',   // Домен, с которого разрешены изображения
+        hostname: 'luxtexcopi.lux-texcv.com.ua',   // Домен, с которого разрешены изображения
         port: '',                  // Порт, если требуется (оставьте пустым для стандартного)
         pathname: '/**',           // Шаблон пути, где ** означает все подкаталоги
       },
