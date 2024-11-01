@@ -1,34 +1,18 @@
 import Layout from "../src/components/Layout";
-import ProductHome from "../src/components/ProductHomePage";
 
-import Post from "../src/components/Post";
 import client from '../src/components/ApolloClient';
-import ParentCategoriesBlock from "../src/components/category/category-block/ParentCategoriesBlock";
-import ParentProductBlock from "../src/components/products/PerentProducts";
+
 import PRODUCTS_AND_CATEGORIES_QUERY from "../src/queries/product-and-categories";
 import HeroCarousel from "../src/components/home/hero-carousel";
-import Accordion from "../src/components/Accordion";
-import { AuthContextProvider } from '../src/components/login-function/auth-context';
-import { ApolloProvider } from "@apollo/client";
-import Login from "../src/components/login";
 
-import { useState } from 'react';
 
 import Head from "next/head"
-import AliceCarousel from 'react-alice-carousel';
-import Navigation from "../src/components/navigation-chantarelle";
-import categoryStripe from "../public/pattern_chant.jpg"
-import categoryRanfors from "../public/ranforse.jpg"
-import categoryBiz from "../public/biz.jpg"
-import categoryChildren from "../public/children.jpg"
+
 import Telegram from "../public/vb.png"
 import 'react-alice-carousel/lib/alice-carousel.css';
-import Image from 'next/image'
-import { Swiper, SwiperSlide } from 'swiper/react';
-import 'swiper/css';
-import { Autoplay } from 'swiper/modules';
-import ParentCategoryBlock from "../src/components/category/category-block/ParentCategoryBlock";
-import ParentTagBlock from "../src/components/category/category-block/ParentTagBlock";
+
+
+
 export default function Home (props) {
 	
 	
