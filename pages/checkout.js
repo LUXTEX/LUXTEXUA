@@ -1,7 +1,6 @@
 import Layout from "../src/components/Layout";
 import CheckoutForm from "../src/components/checkout/CheckoutForm";
-import GET_COUNTRIES from "../src/queries/get-countries";
-import client from "../src/components/ApolloClient";
+
 
 const Checkout = ({data}) => (
 	<Layout>

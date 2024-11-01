@@ -1,13 +1,12 @@
 import Layout from '../../src/components/Layout';
 import { useRouter } from 'next/router';
 import client from '../../src/components/ApolloClient';
-import AddToCartButton from '../../src/components/cart/AddToCartButton';
+
 import {POST_BY_SLUG_QUERY,POSTS_SLUGS} from '../../src/queries/product-by-slug';
 import { isEmpty } from 'lodash';
-import GalleryCarousel from "../../src/components/single-product/gallery-carousel";
-import Price from "../../src/components/single-product/price";
+
 import React, { useEffect, useState } from 'react';
-import axios from 'axios';
+
 export default function Post(props) {
 	const { post } = props;
 

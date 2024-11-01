@@ -11,7 +11,7 @@ import Accordion from "../src/components/Accordion";
 import { AuthContextProvider } from '../src/components/login-function/auth-context';
 import { ApolloProvider } from "@apollo/client";
 import Login from "../src/components/login";
-import SignUp from '../src/components/signup/SignUp'
+
 import { useState } from 'react';
 
 import Head from "next/head"
