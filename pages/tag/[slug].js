@@ -4,13 +4,13 @@ import Product from "../../src/components/ProductHomePage";
 import {PRODUCT_BY_TAG_SLUG,PRODUCT_TAG_SLUGS} from "../../src/queries/product-by-category";
 import {isEmpty} from "lodash";
 import {useRouter} from "next/router";
-import { useAuth } from '../../src/components/login-function/hooks';
+
 
 
 
 	
 export default function CategorySingle( props ) {
-    const { isLoggedIn } = useAuth();
+   
     const router = useRouter()
 
     // If the page is not yet generated, this will be displayed
